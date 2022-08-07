@@ -1,0 +1,2 @@
+This project is aimed at developing a website for the training and placement company. The system is an interactive website that can be accessed throughout the company as well as outside the native state or country. The app facility can be used by the organization as an aid to manage the student information with regards to placement.
+Company representatives can access/search any information put up by the students from the database.
