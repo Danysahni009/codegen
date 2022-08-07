@@ -26,15 +26,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-   
-   $('#content').load("form.html");
-
-});
-</script>
 
   
 </head>
@@ -74,7 +65,7 @@ $(document).ready(function(){
              </ul>
           </li>-->
           <li><a href="#contact">Contact</a></li>
-          <li><a href="colorlib-regform-15/colorlib-regform-15/index.php">Register Now</a></li>
+          <li><a href="colorlib-regform-15/colorlib-regform-15/registration.html">Register Now</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -175,7 +166,7 @@ $(document).ready(function(){
           <h3>About Us</h3>
           <p>CODEGEN is the leader in the “specialized training” brands of India certified by ISO 9001:2015 for its best quality. CODEGEN is the largest training service provider in various IT domains for all IT students as well as for the working professionals. It has an extensive experience of nurturing over 200000+ students in the past few years.
 
-			 CODEGEN has been awarded as the “Best IT and Embedded Training Company” for 5 consecutive years for delivering high quality training and workshops at more than 500 colleges across World. CODEGEN is a trustworthy brand in Education and Training industry with its presence across several cities such as Noida, Roorkee, Lucknow and Dehradun. The company was started 12 years back and it is continuously expanding having its overseas branches in New York, Germany and Ukraine.</p>
+CODEGEN has been awarded as the “Best IT and Embedded Training Company” for 5 consecutive years for delivering high quality training and workshops at more than 500 colleges across World. CODEGEN is a trustworthy brand in Education and Training industry with its presence across several cities such as Noida, Roorkee, Lucknow and Dehradun. The company was started 12 years back and it is continuously expanding having its overseas branches in New York, Germany and Ukraine.</p>
         </header>
 
         <div class="row about-cols">
@@ -232,7 +223,7 @@ $(document).ready(function(){
 
         <header class="section-header wow fadeInUp">
           <h3>Services</h3>
-          
+          <!--<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>-->
         </header>
 
         <div class="row">
@@ -380,7 +371,7 @@ $(document).ready(function(){
   			</div>
 
         <div class="facts-img">
-          <img src="img/fact-img.png" alt="" class="img-fluid">
+          <img src="img/facts-img.png" alt="" class="img-fluid">
         </div>
 
       </div>
@@ -505,7 +496,7 @@ $(document).ready(function(){
               <figure>
                 <img src="img/portfolio/AngulasJs.png" class="img-fluid" alt="">
                 <a href="img/portfolio/AngulasJs.png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="Courselist/Language.html#AngularJs" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <a href="Courselist/Language.html#Angularjs" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
@@ -913,10 +904,30 @@ $(document).ready(function(){
 	<!--=========================================
 	    Query section=========================-->
 
-        <div class="form" id="content">
+        <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-         
+          <form action="insert.php" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Enquiry</button></div>
+          </form>
         </div>
 
       </div>

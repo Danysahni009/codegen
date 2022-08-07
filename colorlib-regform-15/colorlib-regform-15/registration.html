@@ -111,7 +111,8 @@
                         </div>
                         <div class="form-group">
                             <label for="course">Course :</label>
-                            <select id="framework" name="framework[]" multiple class="form-control" >
+                            <div class="form-select">
+                                <select name="course" id="course">
                                     <option value="">--Select--</option>
                                     <option value="c/c++">C/C++</option>
                                     <option value="python">Python</option>
@@ -135,10 +136,9 @@
                                     <option value="mysql">MySQL</option>
                                     <option value="linux">Linux</option>
 				    <option value="hacking">Ethical Hacking</option>
-                                </select> 
-				              
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
                             </div>
-				
                         </div>
                         <div class="form-group">
                             <label for="email">Email ID :</label>
@@ -157,8 +157,6 @@
 
     <!-- JS -->
         <script src="vendor/jquery/jquery.min.js"></script>
-	<script src="js/main.js"></script>
-	
+    <script src="js/main.js"></script>
 </body>
 </html>
-
